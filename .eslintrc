@@ -1,0 +1,146 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "promise"
+  ],
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true,
+    "es6": true
+  },
+   "globals": {
+    "_gaq": true,
+    "_pa": true,
+    "$": true,
+    "app": true,
+    "alert": true,
+    "canvg": true,
+    "console": true,
+    "escape": true,
+    "jQuery": true,
+    "module": true,
+    "require": true,
+    "System": true,
+    "user": true,
+    "next": true,
+
+    "appEnv": true,
+    "appConfig": true,
+    "appLocales": true,
+    "appRoot": true,
+    "loggerHelper": true,
+    "mainRedis": true,
+    "mainHelper": true,
+    "appLodash": true,
+    "allRegions": true,
+    "db_sequelize": true
+  },
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "binaryLiterals": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "octalLiterals": true,
+    "regexUFlag": true,
+    "regexYFlag": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true,
+    "globalReturn": true,
+    "jsx": true
+  },
+  "rules": {
+    "arrow-body-style": 0,
+    "func-style": [2, "declaration", { "allowArrowFunctions": true }],
+    "comma-dangle": 0,
+    "id-length": 0,
+    "new-cap": 0,
+    "eol-last": 0,
+    "jsx-quotes": 0,
+    "consistent-return": 0,
+    "strict": 0,
+    "prefer-template": "error",
+    //"object-curly-spacing": [2, "always"],
+    "no-multi-spaces": 0,
+
+    //
+    // ECMAScript 6
+    //
+    // These rules are only relevant to ES6 environments and are off by default.
+    //
+    "no-var": 2, // require let or const instead of var (off by default)
+    "generator-star-spacing": [2, "before"], // enforce the spacing around the * in generator functions (off by default)
+
+    //
+    // Legacy
+    //
+    // The following rules are included for compatibility with JSHint and JSLint.
+    // While the names of the rules may not match up with the JSHint/JSLint counterpart,
+    // the functionality is the same.
+    //
+    "max-depth": [2, 6], // specify the maximum depth that blocks can be nested (off by default)
+    "max-params": [2, 6], // limits the number of parameters that can be used in the function declaration. (off by default)
+    "max-statements": 0, // specify the maximum number of statement allowed in a function (off by default)
+    "no-bitwise": 0, // disallow use of bitwise operators (off by default)
+    "no-plusplus": 0, // disallow use of unary operators, ++ and -- (off by default)
+
+    brace-style: [1, "1tbs"],
+    comma-style: [1, "last"],
+    default-case: 2,
+    no-floating-decimal: 2,
+    no-nested-ternary: 2,
+    no-undefined: 2,
+    radix: 2,
+    space-before-function-paren: [1, "never"],
+    //keyword-spacing: [1, {after: true}],
+    //space-before-blocks: 2,
+    spaced-comment: [2, "always", { exceptions: ["-"]}],
+    valid-jsdoc: [1, { requireReturn: false, prefer: { return: "returns" }}],
+    wrap-iife: 2,
+    guard-for-in: 2,
+    no-alert: 2,
+    camelcase: 0,
+    curly: ["error", "multi-line"],
+    eqeqeq: [2, "allow-null"],
+    //no-empty: 2,
+    no-use-before-define: ["error", { "functions": false, "classes": true }],
+    no-obj-calls: 2,
+    //no-unused-vars: [1, {vars: "local", args: "after-used"}],
+    no-shadow: 0,
+    no-invalid-regexp: 2,
+    no-undef: 2,
+    no-new: 2,
+    no-extra-semi: 2,
+    no-debugger: 2,
+    no-caller: 1,
+    no-console: 0,
+    arrow-spacing: 2,
+    //semi: 2,
+    quotes: [1, "single", "avoid-escape"],
+    no-unreachable: 2,
+    operator-linebreak: [1, "before", {overrides: {"?": "after", ":": "after"}}],
+    max-len: [2, 250, 4, {"ignoreComments": true, "ignoreUrls": true, "ignorePattern": "^\\s*var\\s.+=\\s*require\\s*\\("}],
+    no-multi-str: 1,
+    no-mixed-spaces-and-tabs: 1,
+    //no-trailing-spaces: 1,
+    space-infix-ops: 1,
+    space-unary-ops: 1,
+    no-with: 2,
+    dot-notation: 1,
+    semi-spacing: 1,
+    key-spacing: [1, {beforeColon: false, afterColon: true, mode: "minimum"}],
+    space-in-parens: [1, "never"],
+
+  }
+}

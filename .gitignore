@@ -1,0 +1,10 @@
+.env
+Procfile
+bower_components/
+node_modules/
+debug.log
+npm-debug.log
+tmp/
+logs/
+winston.log
+storage
